@@ -8,5 +8,5 @@
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "include": ["hardhat.config.ts", "tasks", "waitForNode.ts"]
+  "include": ["hardhat.config.ts", "tasks", "waitForNode.ts", "scripts"]
 }
