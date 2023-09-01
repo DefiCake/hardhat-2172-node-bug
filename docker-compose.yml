@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  node18:
+    container_name: node18
+    build:
+      context: .
+      dockerfile: node18.Dockerfile
+    ports:
+      - 8545:8545
+  node16:
+    container_name: node16
+    build:
+      context: .
+      dockerfile: node16.Dockerfile
+    ports:
+      - 8546:8545

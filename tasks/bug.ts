@@ -16,7 +16,7 @@ task("bug", "deploys bonsai test relay")
     console.log("\n====================\nTrying to fetch RPC block");
     console.log(
       "RPC BLOCK FETCH RESULT:",
-      (await provider.getBlockNumber().catch(console.error)) || "FAILED"
+      (await provider.getBlockNumber().catch(console.error)) ?? "FAILED"
     );
 
     console.log("\n====================\nTrying to fetch llama block");
